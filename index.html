@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <div id="main"></div>
+
+
+    <script type="text/javascript">
+      function load(){
+        require(['js/app'], function (app) {});
+      }
+      function loadDev(){
+          var script = document.createElement("script");
+          script.src = 'jam/require.js';
+          script.onload = load;
+          document.head.appendChild( script );
+      }
+    </script>
+    <script src="jam/require.prod.js" onerror="loadDev()" onload="load()"></script>
+  </body>
+</html>

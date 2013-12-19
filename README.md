@@ -1,4 +1,4 @@
 schema-couch-boilerplate
 ========================
 
-baseline web app for a schema couch. 
+This is just a really basic webapp that has been wired to work out of the box!
