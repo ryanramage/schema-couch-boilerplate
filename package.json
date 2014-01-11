@@ -1,6 +1,6 @@
 {
   "name": "schema-couch-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "baseline web app for a schema couch",
   "main": "index.js",
   "scripts": {
