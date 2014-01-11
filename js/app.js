@@ -1,7 +1,8 @@
-define(['schema-couch-ui'], function( ui ){
+define(['schema-couch-ui', 'text!../settings.json'], function( ui, settings ){
 
   var $main = document.getElementById('main'),
-      api = new ui.controller('http://localhost:5984/db', 'templates/'),
+      settings = JSON.parse(settings),
+      api = new ui.controller(settings.couch, 'templates/'),
       router = null
 
   api.on('init.error', function(err) {  console.log('error!', err)  })
